@@ -1,4 +1,4 @@
-# Thought Process
+# Thought Process - Session 1
 
 This is where my thoughts will go.
 
@@ -6,6 +6,7 @@ Points of interest for session 1:
 
 * *reading and coding started at 9:31 PM*
 * *Documentation started at 11:26PM*
+* *stopped at 11:33 PM*
 
 ## Models
 
