@@ -2,7 +2,8 @@ require './rspec_manifest.rb'
 
 RSpec.describe OcrResult do
   it 'should contain an array of 9 numbers' do
-    OcrResult.new([[1], [2], [3], [4], [5], [6], [7], [8], [9]])
+    result = OcrResult.new([[1], [2], [3], [4], [5], [6], [7], [8], [9]])
+    expect(result.numbers.length).to eq(9)
   end
 
   context 'with a valid input' do
