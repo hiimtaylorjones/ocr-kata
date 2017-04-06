@@ -7,6 +7,7 @@ class OcrResult
   end
 
   def validate
+    @numbers.map { |number| return false if number.class != Fixnum }
     true
   end
 
