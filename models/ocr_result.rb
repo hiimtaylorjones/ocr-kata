@@ -12,7 +12,10 @@ class OcrResult
   end
 
   def to_string
-    validate
-    @numbers.join(',').delete(',')
+    if validate
+      @numbers.join(',').delete(',')
+    else
+      nil
+    end
   end
 end
