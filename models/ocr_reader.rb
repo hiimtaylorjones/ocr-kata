@@ -8,7 +8,7 @@ class OcrReader
 
   def process
     # Found a nifty answer here I want to mess with - http://stackoverflow.com/a/17415655
-    puts "\n"
+    outcome_array = []
     File.foreach(@file_path).with_index do |line, line_num|
       puts "#{line_num}: #{line}"
     end
