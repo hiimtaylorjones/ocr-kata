@@ -9,7 +9,11 @@ Points of interest for session 1:
 
 ## Models
 
-### OCR Reader  
+### OCR Reader
+
+The OCR Reader class is what we use to read a file and generate specific resources
+from it. It should simply return an OCR Result instance, when prompted.
+
 
 ### OCR Result
 
