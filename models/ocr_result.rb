@@ -8,6 +8,7 @@ class OcrResult
 
   def validate
     @numbers.map { |number| return false if number.class != Fixnum }
+    return false if @numbers.length > 9
     true
   end
 
