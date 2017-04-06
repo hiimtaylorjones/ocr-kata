@@ -2,9 +2,14 @@ require './rspec_manifest.rb'
 
 RSpec.describe OcrReader do
   context 'with a valid input file' do
-    it 'should have a method to access file data' do
+    it 'should have a method to access file path' do
       reader = OcrReader.new('../../stories/1.txt')
-      expect(reader.data).to_not eq(nil)
+      expect(reader.file_path).to eq('../../stories/1.txt')
+    end
+
+    it 'should an initial result of nil' do
+      reader = OcrReader.new('../../stories/1.txt')
+      expect(reader.result).to eq(nil)
     end
 
     it 'should be able to take in a file line and return an OcrResult' do
