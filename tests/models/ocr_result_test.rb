@@ -12,7 +12,7 @@ RSpec.describe OcrResult do
       # of numbers
       result = OcrResult.new([[1], [2], [3], [4], [5], [6], [7], [8], [9]])
       validation = result.validate
-      expect(validation).to be_true
+      expect(validation).to eq(true)
     end
 
     it 'should have a method that outputs all 9 numbers into a string' do
