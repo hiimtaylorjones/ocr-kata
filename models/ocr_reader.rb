@@ -7,5 +7,10 @@ class OcrReader
   end
 
   def process
+    # Found a nifty answer here I want to mess with - http://stackoverflow.com/a/17415655
+    puts "\n"
+    File.foreach(@file_path).with_index do |line, line_num|
+      puts "#{line_num}: #{line}"
+    end
   end
 end
